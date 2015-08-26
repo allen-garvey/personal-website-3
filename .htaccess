@@ -1,2 +1,2 @@
 RewriteEngine On
-RewriteRule ^(.*)$ http://localhost/Websites/allen_garvey_3/public/index.php [L]
+RewriteRule ^(.*)$ http://localhost/Websites/allen_garvey_3/public/ [L]
