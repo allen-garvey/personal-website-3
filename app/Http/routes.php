@@ -11,6 +11,17 @@
 |
 */
 
-Route::get('/', function () {
+Route::get('/code', ['as' => 'code', function(){
     return view('pages.home');
-});
+}]);
+
+Route::get('/design', ['as' => 'design', function(){
+    return view('pages.home');
+}]);
+
+Route::get('/{page}', ['as' => 'home', function(){
+    return view('pages.home');
+}])
+->where('page', '^$|index\.(html|php|jsp|aspx?)$');
+
+
