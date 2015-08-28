@@ -11,9 +11,9 @@
     <body>
     	<div class="nav_bar">
     		<nav class='nav container'>
-    			<a href="{{URL::route('home')}}" class="brand">Allen Garvey</a>
+    			<a href="{{URL::route('home', '')}}" class="brand">Allen Garvey</a>
 				<ul>
-					<li><a href="{{URL::route('code')}}">Code</a></li>
+					<li><a href="{{URL::route('code.index')}}">Code</a></li>
 					<li><a href="{{URL::route('design')}}">Design</a></li>
 				</ul>
     		</nav>
