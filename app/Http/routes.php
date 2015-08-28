@@ -11,17 +11,22 @@
 |
 */
 
-Route::get('/code', ['as' => 'code', function(){
+Route::pattern('index', '^$|index\.(html?|php|jsp|.cfm|aspx?)$');
+
+Route::get('/{index}', ['as' => 'home', function(){
     return view('pages.home');
 }]);
+
+Route::resource('code', 'CodeController',
+                ['only' => ['index', 'show']]);
 
 Route::get('/design', ['as' => 'design', function(){
     return view('pages.home');
 }]);
 
-Route::get('/{page}', ['as' => 'home', function(){
-    return view('pages.home');
-}])
-->where('page', '^$|index\.(html|php|jsp|aspx?)$');
 
+
+// Route::get('/', ['as' => 'home', function(){
+//     return view('pages.home');
+// }]);
 
