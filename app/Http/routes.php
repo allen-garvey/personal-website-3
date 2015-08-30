@@ -20,13 +20,7 @@ Route::get('/{index}', ['as' => 'home', function(){
 Route::resource('code', 'CodeController',
                 ['only' => ['index', 'show']]);
 
-Route::get('/design', ['as' => 'design', function(){
-    return view('pages.home');
-}]);
+Route::resource('design', 'ArtworkController',
+                ['only' => ['index', 'show']]);
 
-
-
-// Route::get('/', ['as' => 'home', function(){
-//     return view('pages.home');
-// }]);
 
