@@ -14,7 +14,7 @@
     			<a href="{{URL::route('home', '')}}" class="brand">Allen Garvey</a>
 				<ul>
 					<li><a href="{{URL::route('code.index')}}">Code</a></li>
-					<li><a href="{{URL::route('design')}}">Design</a></li>
+					<li><a href="{{URL::route('design.index')}}">Design</a></li>
 				</ul>
     		</nav>
     	</div>
