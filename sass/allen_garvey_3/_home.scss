@@ -1,0 +1,16 @@
+.site_title{
+	font-family: inherit;
+	font-weight: 100;
+	@include font_size(7);
+	margin: 0;
+}
+.site_subtitle{
+	@include font_size(1);
+	margin: -1rem 0;
+}
+
+.home_content{
+	img{
+		float: right;
+	}
+}
