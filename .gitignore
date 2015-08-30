@@ -30,3 +30,6 @@ passwords.php
 database/*
 config/*
 composer.lock
+
+public/stylesheets/*
+public/scripts/*
