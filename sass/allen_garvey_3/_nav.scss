@@ -1,6 +1,10 @@
 /**
 * Nav styles
 */
+
+.nav_bar{
+	background-image: linear-gradient(-180deg, #DCE7F1 1%, #FFFFFF 100%);
+}
 .nav{
 	display: -webkit-flex;
 	display: flex;
@@ -16,5 +20,9 @@
 	}
 	li{
 		display: inline-block;
+		&:first-of-type{
+			margin-right: 1em;
+		}
 	}
+
 }
