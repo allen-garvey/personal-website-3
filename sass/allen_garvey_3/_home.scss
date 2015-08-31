@@ -1,16 +1,33 @@
 .site_title{
-	font-family: inherit;
+	@include font_brand;
 	font-weight: 100;
-	@include font_size(7);
+	@include font_size(6);
 	margin: 0;
 }
 .site_subtitle{
 	@include font_size(1);
 	margin: -1rem 0;
+
 }
 
-.home_content{
-	img{
-		float: right;
+.home {
+	.jumbotron{
+		margin-top: 4rem;
+		margin-bottom: 6rem;
+	}
+	.content{
+		img{
+			float: right;
+			max-width: 40%;
+		}
+		margin-bottom: 4rem;
+	}
+	.categories{
+		display: -webkit-flex;
+		display: flex;
+		article{
+			-webkit-flex-grow: 1;
+			flex-grow: 1;
+		}
 	}
 }
