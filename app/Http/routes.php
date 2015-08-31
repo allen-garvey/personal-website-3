@@ -14,7 +14,7 @@
 Route::pattern('index', '^$|index\.(html?|php|jsp|.cfm|aspx?)$');
 
 Route::get('/{index}', ['as' => 'home', function(){
-    return view('pages.home');
+    return view('pages.home')->with('data', ['body_class' => 'home']);
 }]);
 
 Route::resource('code', 'CodeController',

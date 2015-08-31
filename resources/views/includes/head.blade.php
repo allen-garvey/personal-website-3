@@ -9,7 +9,7 @@
         {!!HTML::style('stylesheets/style.css')!!}
         <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
     </head>
-    <body>
+    <body class="{{$data['body_class']}}">
     	<div class="nav_bar">
     		<nav class='nav container'>
     			<a href="{{URL::route('home', '')}}" class="brand">Allen Garvey</a>

@@ -32,7 +32,7 @@ abstract class ArrayController extends Controller
     public function index(Route $route)
     {
          return view('pages.category_index')
-                    ->with('data', ['items' => $this->getModel(), 'route' => $route, 'uri' => $route->getUri(), 'title' => $this->getPageTitle()]);
+                    ->with('data', ['items' => $this->getModel(), 'route' => $route, 'uri' => $route->getUri(), 'body_class' => $route->getUri(), 'title' => $this->getPageTitle()]);
     }
 
     /**
@@ -62,10 +62,10 @@ abstract class ArrayController extends Controller
      * @param  int  $id
      * @return Response
      */
-    public function show($id)
+    public function show(Route $route, $id)
     {
         return view('pages.category_show')
-                    ->with('item', $this->getModel()[$id]);
+                    ->with('data', ['item' => $this->getModel()[$id], 'body_class' => str_replace('.', '_', $route->getName())]);
     }
 
     /**
