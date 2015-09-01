@@ -3,11 +3,13 @@
 }
 
 @mixin font_brand{
-	font-family: 'Raleway', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+	font-family: 'Raleway', Tahoma, 'Helvetica Neue', Helvetica, Arial, sans-serif;
+	font-weight: 100;
 	@content;
 }
 @mixin font_heading{
-	font-family: Tahoma, 'Helvetica Neue', Helvetica, Arial, sans-serif;
+	font-family: 'Raleway', Tahoma, 'Helvetica Neue', Helvetica, Arial, sans-serif;
+	font-weight: 100;
 	@content;
 }
 @mixin font_body{
