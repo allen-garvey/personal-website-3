@@ -5,7 +5,7 @@
         <title>Allen Garvey | Front-End Web Developer and Designer</title>
         <meta name="description" content=""/>
         <meta name="viewport" content="width=device-width, initial-scale=1"/>
-        <link href='https://fonts.googleapis.com/css?family=Raleway:400,100&amp;text=AlenGarvy' rel='stylesheet' type='text/css' />
+        <link href='https://fonts.googleapis.com/css?family=Raleway:100' rel='stylesheet' type='text/css' />
         {!!HTML::style('stylesheets/style.css')!!}
         <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
     </head>
