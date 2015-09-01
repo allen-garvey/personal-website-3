@@ -14,8 +14,8 @@ body{
 }
 
 h1,h2,h3,h4{
-	@include font_heading;
 	font-weight : normal;
+	@include font_heading;
 	margin: 0;
 }
 h1{
