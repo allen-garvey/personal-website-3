@@ -1,16 +1,18 @@
 @extends('layouts.page')
 @section('content')
 	<header class="jumbotron">
-		<div class="container">
-			<h1 class="site_title">Allen Garvey</h1>
-			<h2 class="site_subtitle">Front-end web developer for the 21<sup>st</sup> century</h2>
+		<div class="container clearfix">
+			<hgroup>
+				<h1 class="site_title">Allen Garvey</h1>
+				<h2 class="site_subtitle">Front-end web developer for the 21<sup>st</sup> century</h2>
+			</hgroup>
+			{!!HTML::image('images/allen-garvey-portrait-composite.png', 'Portrait of Allen Garvey')!!}
+			<div class="lead">
+				<p>Hi, I'm Allen. I do blank and blank.</p>
+			</div>
 		</div>
 	</header>
-	<main class="container content clearfix">
-		{!!HTML::image('images/allen-garvey-portrait-composite.png', 'Portrait of Allen Garvey')!!}
 		<?php //could also use URL::asset('images/allen-garvey-portrait-composite.png') to get path ?>
-		<p>Hi, I'm Allen. I do blank and blank.</p>
-	</main>
 	<section class='container categories'>
 		<article>
 			<a href="{{URL::route('code.index')}}">
