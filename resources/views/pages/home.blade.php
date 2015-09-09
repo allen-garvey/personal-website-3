@@ -14,7 +14,7 @@
 	</header>
 		<?php //could also use URL::asset('images/allen-garvey-portrait-composite.png') to get path ?>
 	<section class='container categories'>
-		<article>
+		<article class="category">
 			<a href="{{URL::route('code.index')}}">
 				<div>
 					<h2>Code</h2>
@@ -23,7 +23,7 @@
 			</a>
 		</article>
 		
-		<article>
+		<article class="category">
 			<a href="{{URL::route('design.index')}}">
 				<div>
 					<h2>Design</h2>
