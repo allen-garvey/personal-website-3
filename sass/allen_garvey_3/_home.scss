@@ -36,9 +36,18 @@
 	.categories{
 		display: -webkit-flex;
 		display: flex;
-		article{
+		-ms-flex-direction: column;
+		-webkit-flex-direction: column;
+		flex-direction: column;
+		.category{
 			-webkit-flex-grow: 1;
 			flex-grow: 1;
+			margin-bottom : 3rem;
+		}
+		@include media_q(sm){
+			-ms-flex-direction: row;
+			-webkit-flex-direction: row;
+			flex-direction: row;
 		}
 	}
 }
