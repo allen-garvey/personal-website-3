@@ -18,16 +18,6 @@
 		hgroup{
 			display: inline-block;
 		}
-		img{
-			margin-bottom: 1.5rem;
-			display: block;
-			@include media_q(med){
-				display: inline;
-				float: right;
-				max-width: 40%;
-				vertical-align: top;
-			}
-		}
 		.lead{
 			margin-top: 2rem;
 		}
