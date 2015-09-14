@@ -42,5 +42,4 @@
 			</a>
 		</article>
 	</section>
-	{!!HTML::script('scripts/app.min.js')!!}
 @stop
