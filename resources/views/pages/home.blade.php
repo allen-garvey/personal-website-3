@@ -9,7 +9,7 @@
 			<div class="image_comparison_parent" id="comparison">
 				<figure>
 					<div class="image_comparison_container">
-						{!!HTML::image('images/portraits/allen-garvey-art-portrait-crop.png', 'Portrait of Allen Garvey')!!}
+						{!!HTML::image('images/portraits/allen-garvey-art-portrait.png', 'Portrait of Allen Garvey')!!}
 					</div>
 					<div class="image_comparison_container divisor" id="divisor">
 						{!!HTML::image('images/portraits/allen-garvey-code-portrait.png', 'Portrait of Allen Garvey')!!}
