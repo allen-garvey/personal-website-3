@@ -46,7 +46,7 @@ $comparison_img_height : 5/4 * $comparison_img_width;
 $color_scroll_track : rgba(171,171,171,0.3);
 $color_scroll_slider : #9796c3;
 $color_scroll_slider_active : darken($color_scroll_slider, 20%); 
-.home{
+.image_comparison_parent{
 	input[type=range]{
 		-webkit-appearance:none;
 		-moz-appearance:none;
