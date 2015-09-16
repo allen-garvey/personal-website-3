@@ -20,6 +20,11 @@
 		}
 		.lead{
 			margin-top: 2rem;
+			@include media_q(med){
+				margin-top: 0;
+				position: relative;
+				top: -22em;
+			}
 		}
 		
 	}
