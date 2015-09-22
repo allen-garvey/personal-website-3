@@ -6,8 +6,10 @@ var uglify = require('gulp-uglify');
 var rename = require('gulp-rename');
 var maps = require('gulp-sourcemaps');
 
+var JS_SOURCE_DIR = 'js/';
+
 gulp.task('concatScripts', function(){
-	return gulp.src(['js/image_comparison_slider.js'])
+	return gulp.src(['image_comparison_slider', 'footer'].map(function(file){return JS_SOURCE_DIR + file + '.js';}))
 		.pipe(maps.init())
 		.pipe(concat('app.js'))
 		.pipe(maps.write('./'))
