@@ -1,0 +1,12 @@
+/*
+ * Styles for footer 
+ */
+.total{
+	min-height: 93%;
+}
+ .footer{
+ 	text-align: center;
+ 	@include font_size(-1);
+ }
+
+
