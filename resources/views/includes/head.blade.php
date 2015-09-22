@@ -10,12 +10,13 @@
         <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
     </head>
     <body class="{{$data['body_class']}}">
-    	<div class="nav_bar">
-    		<nav class='nav container'>
-    			<a href="{{URL::route('home', '')}}" class="brand">Allen Garvey</a>
-				<ul>
-					<li><a href="{{URL::route('code.index')}}">Code</a></li>
-					<li><a href="{{URL::route('design.index')}}">Design</a></li>
-				</ul>
-    		</nav>
-    	</div>
+    	<div class="total">{{-- required to place footer at bottom --}}
+            <div class="nav_bar">
+        		<nav class='nav container'>
+        			<a href="{{URL::route('home', '')}}" class="brand">Allen Garvey</a>
+    				<ul>
+    					<li><a href="{{URL::route('code.index')}}">Code</a></li>
+    					<li><a href="{{URL::route('design.index')}}">Design</a></li>
+    				</ul>
+        		</nav>
+        	</div>
