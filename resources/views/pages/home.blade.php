@@ -22,7 +22,6 @@
 			</div>
 		</div>
 	</header>
-		<?php //could also use URL::asset('images/allen-garvey-portrait-composite.png') to get path ?>
 	<section class='container categories'>
 		<article class="category">
 			<a href="{{URL::route('code.index')}}">
